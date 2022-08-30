@@ -4,7 +4,7 @@ EXE  = streamcluster
 
 .PHONY: run
 run:
-	./$(EXE) 10 20 128 1000000 200000 5000 none output.txt 4
+	./$(EXE) 10 20 128 1000000 200000 5000 none output.txt ${NDIVS}
 
 .PHONY: all
 all: $(EXE)
